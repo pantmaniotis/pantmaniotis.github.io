@@ -2196,7 +2196,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
     content: url(images/toolbarButton-search@2x.png);
   }
   #toolbarHomePage.toolbarButton::before {
-    content: url(images/toolbarButton-search@2x.png);
+    content: url(images/toolbarButton-home@2x.png);
   }
 
   .secondaryToolbarButton.firstPage::before {
