@@ -1,0 +1,173 @@
+.menubtn{
+	float: left;
+	padding-left:1.5em;
+content: '\f197';
+}
+
+#btn{
+background-color:transparent;
+float: left;
+    width: 25px;
+    height: 40px;
+border:0;
+
+}
+
+#box{
+	z-index:202;
+	visibility:hidden;
+	opacity: 0;
+	transition: visibility 0.1s, opacity 0.1s linear;
+	background-color:#555;
+	float:left;
+	width:250px;
+	height:100vh;
+	position:fixed;
+	margin:0;
+	border:0;
+	text-align: left;
+	color:white;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}
+
+#box li{
+    color:white;
+}
+
+
+#box2{
+	z-index:201;
+	visibility:hidden;
+	opacity: 0;
+	transition: visibility 0.1s, opacity 0.1s linear;
+	position:fixed;
+	padding:0;
+	margin:0;
+	top:0;
+	left:0;
+
+	width: 100%;
+	height: 100%;
+	opacity:0.5;
+	background-color:#555;
+}
+
+html, body {
+  scroll-padding-top: 70px; /* height of sticky header */
+}
+
+.cvhr{
+	margin:0.5em 0;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	flex: 1;
+	margin: 2px;
+	padding: 5px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column2 {
+	float: left;
+	width: 50%;
+	flex: 1;
+	margin: 2px;
+	padding: 5px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+}
+
+.row2 {
+  display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.container_cv{
+	overflow:hidden;
+}
+
+.container_cv_rev{
+	overflow:hidden;
+}
+.container_cv_left{
+	float:left;
+    overflow:hidden;
+		
+
+}
+.container_cv_right{
+	float:right;
+    overflow:hidden;
+}
+
+@media screen and (max-width: 800px) {
+.container_cv{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}	
+
+.container_cv_rev{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	/* Reverse Column Order */
+	-webkit-flex-flow: column-reverse;
+	flex-flow: column-reverse;
+}
+
+.container_cv_right{
+		float:left;
+	}
+}
+
+.dbtn{
+float:left
+}
+
+.download_button{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+#box_list{
+	position: absolute;
+	left: 10px;
+	vertical-align: middle;
+}
+
+.box_list_style{
+	list-style-type:none;
+}
+
+.classpad{
+	padding-top:150px;
+}
+
+.pgnf{
+	text-align:center;
+}
+
+.pgnf p{
+	white-space: pre-line; 
+
+}
+
+

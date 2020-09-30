@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Pantelis Maniotis - Portfolio</title>
+	<link rel = "icon" type = "image/png" href = "Logo.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/mycss.css" />
+
+	<script>
+	function box_visibility(){
+		var obj = document.getElementById('box')
+		var vis = obj.style.visibility;
+		obj.style.visibility = vis == "visible" ? 'hidden' : "visible"
+ 		obj.style.opacity = 1;
+		var obj2 = document.getElementById('box2')
+		var vis2 = obj2.style.visibility;
+		obj2.style.visibility = vis2 == "visible" ? 'hidden' : "visible"
+		obj2.style.opacity = 0.5;
+	}
+	function clear_screen(){
+		var obj = document.getElementById('box')
+		var vis = obj.style.visibility;
+		obj.style.visibility = 'hidden';
+
+		var obj2 = document.getElementById('box2')
+		var vis2 = obj2.style.visibility;
+		obj2.style.visibility = 'hidden';
+	}
+	</script>
+</head>
+
+<body class="is-preload">
+	<nav id="nav">
+		<div class=dbtn onclick="return box_visibility()">
+		<ul>
+			<li><a href="javascript:void(0);">
+				<svg width="30" height="30">
+					<path d="M0,12 25,12" stroke="#fff" stroke-width="4"/>
+					<path d="M0,20 25,20" stroke="#fff" stroke-width="4"/>
+					<path d="M0,28 25,28" stroke="#fff" stroke-width="4"/>
+				</svg>
+			</a></li>
+		</ul>
+		</div>
+		<ul class="container">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="CV.html">CV</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div id="box">
+		<div id=box_list>
+			<ul class="box_list_style">
+				<li><a href="index.html" onclick="return clear_screen()">1. Home</a></li>
+				<li><a href="CV.html" onclick="return clear_screen()">2. CV</a></li>
+				<li><a href="About.html" onclick="return clear_screen()">3. About</a></li>
+				<li><a href="Contact.html" onclick="return clear_screen()">4. Contact</a></li>				
+			</ul>
+		</div>
+		<div class="download_button">
+			<a href="pdf/web/viewer.html?file=Maniotis_CV.pdf" class="button icon solid fa-download">Download CV</a>
+		</div>
+	</div>
+
+	<div id="box2" onclick="return clear_screen()">	</div>
+
+	<div id="main">						
+		<section id="five">
+			<div class="container" style="padding-top:100px;">			
+				<h3>About me</h3>
+				<p><span class="image right"><img src="images/Bio.jpg" alt="" /></span>Pantelis Maniotis received his BSc and MSc in Electrical and Computer Engineering from the Aristotle University of Thessaloniki (AUTh), Greece, in 2015. He also finished his his PhD in Computer Science and Electronics Engineering from the University of Essex, in September 2020. He is a competent data scientist with a comprehensive knowledge and experience in analysing large datasets and developing forecasting models. Some of his interests involve the fields of machine learning, Deep-learning, time-series forecasting, and statistical analysis.</p>
+				</section>
+			</div>
+		</section>
+	</div>
+
+		<section id="footer">
+			<div class="container" style="padding-top: 4em;">
+				<h5 style="color:white">Contact:</h5><p style="margin-bottom: 1em;">Email: pantmaniotis@gmail.com<br />Phone: +44 7716651128</p>
+				<h5 style="color:white">Connect:</h5>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/pantelis.man.7" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.linkedin.com/in/pantmaniotis/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="index.html" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				</ul>
+
+				<ul class="copyright">
+					<li>&copy; 2020 Pantelis Maniotis. All rights reserved.</li>
+				</ul>
+			</div>
+		</section>
+
+	</div>
+</body>
+</html>

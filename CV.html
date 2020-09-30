@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Pantelis Maniotis - Portfolio</title>
+	<link rel = "icon" type = "image/png" href = "Logo.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/mycss.css" />
+	<script>
+	function box_visibility(){
+		var obj = document.getElementById('box')
+		var vis = obj.style.visibility;
+		obj.style.visibility = vis == "visible" ? 'hidden' : "visible"
+ 		obj.style.opacity = 1;
+		var obj2 = document.getElementById('box2')
+		var vis2 = obj2.style.visibility;
+		obj2.style.visibility = vis2 == "visible" ? 'hidden' : "visible"
+		obj2.style.opacity = 0.5;
+	}
+	function clear_screen(){
+		var obj = document.getElementById('box')
+		var vis = obj.style.visibility;
+		obj.style.visibility = 'hidden';
+
+		var obj2 = document.getElementById('box2')
+		var vis2 = obj2.style.visibility;
+		obj2.style.visibility = 'hidden';
+	}
+	</script>
+</head>
+
+
+<body class="is-preload">
+	<nav id="nav">
+		<div class=dbtn onclick="return box_visibility()">
+		<ul>
+			<li><a style="cursor: pointer;">
+				<svg width="30" height="30">
+					<path d="M0,12 25,12" stroke="#fff" stroke-width="4"/>
+					<path d="M0,20 25,20" stroke="#fff" stroke-width="4"/>
+					<path d="M0,28 25,28" stroke="#fff" stroke-width="4"/>
+				</svg>
+			</a></li>
+		</ul>
+		</div>
+		<ul class="container">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="CV.html">CV</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div id="box">
+		<div id=box_list>
+			<ul class="box_list_style">
+				<li><a href=#Profile onclick="return clear_screen()">1. Profile</a></li>
+				<li><a href=#Work_Experience onclick="return clear_screen()">2. Work Experience</a></li>
+				<li><a href=#Education onclick="return clear_screen()">3. Education</a></li>
+				<li><a href=#Skills onclick="return clear_screen()">4. Skills</a></li>
+				<li><a href=#Interests onclick="return clear_screen()">5. Interests</a></li>					
+			</ul>
+		</div>
+		<div class="download_button">
+			<a href="pdf/web/viewer.html?file=Maniotis_CV.pdf" class="button icon solid fa-download">Download CV</a>
+		</div>
+	</div>
+
+	<div id="box2" onclick="return clear_screen()">	</div>
+
+
+	<div id="main">
+		<section id="three">
+			<div class="container" style="padding-top:100px;">
+				<h3 id="Profile">Profile:</h3>
+				<hr class=cvhr>
+				<p>A competent data scientist with a comprehensive knowledge and experience in analysing large datasets and developing forecasting models. His fields of knowledge include:</p>
+				<div class="row">					
+					<div class="column">
+						<ul>
+							<li>Machine Learning</li>
+							<li>Deep Learning</li>
+							<li>Data Analysis</li>
+						</ul>
+					</div>
+					<div class="column">
+						<ul>
+							<li>Database design</li>
+							<li>Data cleaning</li>
+							<li>Automation of processes</li>
+						</ul>					
+					</div>
+					<div class="column">
+						<ul>
+							<li>Statistical Analysis</li>
+							<li>Combinatorial optimization</li>
+							<li>Software Engineering</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 id="Work_Experience">Work Experience:</h3>	
+				<hr class=cvhr>
+				<div class="container_cv">
+					<div class="container_cv_left"><strong>University of Essex</strong></div>
+					<div class="container_cv_right">Wivenhoe Park, Colchester, UK</div>
+				</div>					
+				<div class="container_cv">
+					<div class="container_cv_left">Data Science / Research and Development</div>
+					<div class="container_cv_right">Oct 2016 - Sept 2020</div>
+				</div>
+				
+				<ul>
+					<li>Simulated 5G mobile networks for the delivery of VR applications, in order to maximise
+the Quality of Experience users enjoy and minimise the operating cost.</li>
+					<li>Extracted valuable insights from the statistical analysis and visualisation of large datasets
+regarding the users’ consumption patterns.</li>
+					<li>Developed Machine Learning and Deep Learning models, in order to optimise
+the performance of the mobile networks.</li>
+				</ul>
+
+				<div class="container_cv">
+					<div class="container_cv_left"><strong>NDC Technologies</strong></div>
+					<div class="container_cv_right">Heybridge, Maldon, United Kingdom</div>
+				</div>				
+				<div class="container_cv">
+					<div class="container_cv_left">Data Analyst</div>
+					<div class="container_cv_right">May 2018 – September 2018</div>
+				</div>
+			
+				<ul>
+					<li>Developed a standalone MS Access Database in Access 2016 for data collection and data analysis processes.</li>
+					<li>Built front-end screen with user menus, input forms, reports forms, using custom procedures in VBA code and macros to increase consistency of data.</li>
+					<li>Performed data cleaning techniques to ensure data correctness and accuracy.</li>
+				</ul>
+
+
+				<div class="container_cv">
+					<div class="container_cv_left"><strong>Hellenic Army</strong></div>
+					<div class="container_cv_right">Evros, Greece</div>
+				</div>
+				<div class="container_cv">
+					<div class="container_cv_left">Data Analyst</div>
+					<div class="container_cv_right">March 2015 – December 2015</div>
+				</div>
+				<ul>
+					<li>Managed a large volume of sensitive military data using MS Office.</li>
+					<li>Maintained and improved the tools and applications used in MS Excel, MS Access, using VBA.</li>
+					<li>Optimized data collection procedures and generated reports on a weekly and monthly basis.</li>
+				</ul>
+				
+				
+				<h3 id="Education">Education:</h3>	
+				<hr class=cvhr>
+				<div class="container_cv">
+					<div class="container_cv_left"><strong>University of Essex</strong></div>
+					<div class="container_cv_right">Wivenhoe Park, Colchester, Essex, UK</div>
+				</div>
+				<div class="container_cv_rev">
+					<div class="container_cv_left">
+						<ul>
+							<li>PhD in Computer Science and Electronic Engineering</li>
+						</ul>
+					</div>
+					<div class="container_cv_right">October 2016 – September 2020</div>
+				</div>
+
+				<div class="container_cv">
+					<div class="container_cv_left"><strong>Aristotle University of Thessaloniki  (AUTh)</strong></div>
+					<div class="container_cv_right">Thessaloniki, Greece</div>
+				</div>
+				<div class="container_cv_rev">
+					<div class="container_cv_left">
+						<ul>
+							<li>BSc and MSc in Electrical and Computer Engineering (5 year degree)</li>
+						</ul>
+					</div>
+					<div class="container_cv_right">Sept 2007 – April 2015</div>
+				</div>
+
+				<h3 id="Skills">Skills:</h3>	
+				<hr class=cvhr>
+
+				<div class="container_cv">
+					<ul>
+						<li>Specialized computer software knowledge ( MS Office, MATLAB, Tableu , SPSS, LaTeX, Adobe Photoshop, GIMP )</li>
+						<li>Programming skills (Python, Pandas, NumPy, Scikit-learn, Matplotlib, Keras, SQL, R, C, C++, VBA, Bash Shell).</li>
+						<li>Excellent knowledge of Linux, Windows, Mac OS operating systems.</li>
+						<li>Excellent knowledge of English and Greek.</li>
+					</ul>
+				</div>
+
+				<h3 id="Interests">Interests:</h3>	
+				<hr class=cvhr>
+
+				<div class="container_cv">
+					<ul>
+						<li>Keeping up to date with the state-of-the-art technology advancements.</li>
+						<li>Testing computer software capabilities.</li>
+						<li>Playing chess.</li>
+						<li>Exercising.</li>
+					</ul>
+				</div>
+
+
+		</section>
+
+		<section id="footer">
+			<div class="container" style="padding-bottom:0em;">
+				<h5 style="color:white;">Contact:</h5><p style="margin-bottom: 1em;">Email: pantmaniotis@gmail.com<br />Phone: +44 7716651128</p>
+				<h5 style="color:white">Connect:</h5>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/pantelis.man.7" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.linkedin.com/in/pantmaniotis/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="index.html" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				</ul>
+
+				<ul class="copyright">
+					<li>&copy; 2020 Pantelis Maniotis. All rights reserved.</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
