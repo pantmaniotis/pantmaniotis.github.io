@@ -1756,6 +1756,14 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-height: 400px) {
+
+			.container {
+				margin: 0;				
+			}
+
+		}
+
 
 /* Section/Article */
 
