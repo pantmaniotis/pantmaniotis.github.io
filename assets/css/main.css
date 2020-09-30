@@ -3041,7 +3041,7 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 500px) {
 
 		/* Basic */
 
