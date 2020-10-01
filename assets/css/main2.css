@@ -30,6 +30,14 @@ span{
 	color:#2b2b2b;
 }
 
+body{
+	background:#1D1D1D
+}
+
+section{
+	background:#fff;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -82,9 +90,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #fff;
-	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
