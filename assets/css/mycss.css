@@ -142,19 +142,23 @@ float:left
 }
 
 .download_button{
-	position: fixed;
+	position: absolute;
 	bottom: 20px;
 	left: 20px;
 }
 
 #box_list{
-	position: absolute;
-	left: 10px;
+	position: relative;
 	vertical-align: middle;
 }
 
 .box_list_style{
 	list-style-type:none;
+	padding-left:0;
+}
+
+.box_list_style li{
+    padding-left:0;
 }
 
 .classpad{
