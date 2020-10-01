@@ -28,6 +28,28 @@
 		var vis2 = obj2.style.visibility;
 		obj2.style.visibility = 'hidden';
 	}
+	function urlBookmark(paperid){
+		var intViewportHeight = window.innerHeight;
+		var intViewportWidth = window.innerWidth;
+		switch(paperid) {
+		  case 1:
+			    str2="Tile-Based Joint Caching and Delivery of360oVideos in Heterogeneous Networks.pdf"
+			break;
+		  case 2:
+				str2="Viewport-Aware Deep Reinforcement LearningApproach for 360oVideo Caching.pdf"
+			break;
+		  case 3:
+				str2="Tile-Based Joint Caching and Delivery of360oVideos in Heterogeneous Networks.pdf"
+			break;
+		}
+		str1="pdf/web/viewer.html?file=";
+		if (intViewportWidth<840 || intViewportWidth<840) {
+			window.location = str1.concat(str2,"#pagemode=none") 
+		} else {
+			window.location = str1.concat(str2,"#pagemode=bookmarks")    			  
+		}
+	}
+
 	</script>
 </head>
 <body class="is-preload">
@@ -58,13 +80,13 @@
 				<li><a href="House_prices.html">1. House Prices</a></li>
 				<li><a href="Titanic.html">2. Titanic Survivors</a></li>
 				<li><a href="Digits_recognizer.html">3. Digits Recognizer</a></li>
-				<li><a href="pdf/web/viewer.html?file=Tile-Based Joint Caching and Delivery of360oVideos in Heterogeneous Networks.pdf">4. Edge caching (1)</a>
-				<li><a href="pdf/web/viewer.html?file=Viewport-Aware Deep Reinforcement LearningApproach for 360oVideo Caching.pdf">5. Edge caching (2)</a></li>
-				<li><a href=#Interests onclick="return clear_screen()">6. Edge Caching (3)</a></li>					
+				<li><a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(1)">4. Edge caching (1)</a>
+				<li><a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(2)">5. Edge caching (2)</a></li>
+				<li><a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(2)">6. Edge Caching (3)</a></li>					
 			</ul>
 		</div>
 		<div class="download_button">
-			<a href="pdf/web/viewer.html?file=Maniotis_CV.pdf" class="button icon solid fa-download">Download CV</a>
+			<a href="pdf/web/viewer.html?file=Maniotis_CV.pdf#pagemode=none" class="button icon solid fa-download">Download CV</a>
 		</div>
 	</div>
 
@@ -103,23 +125,23 @@
 
 
 					<article>
-						<a href="pdf/web/viewer.html?file=Tile-Based Joint Caching and Delivery of360oVideos in Heterogeneous Networks.pdf" class="image"><img src="images/pic04.jpg" alt="" /></a>
+						<a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(1)" class="image"><img src="images/pic04.jpg" alt="" /></a>
 						<div class="inner">
-							<a href="pdf/web/viewer.html?file=Tile-Based Joint Caching and Delivery of360oVideos in Heterogeneous Networks.pdf"><h4>Edge caching (1) [pdf]</h4></a>
+							<a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(1)"><h4>Edge caching (1) [pdf]</h4></a>
 							<p>In this project, we examine the caching of VR applications in 5G networks, using combinatorial optimization techniques (Integer Linear Programming (ILP), Lagrange relaxation, etc).</p>
 						</div>
 					</article>
 					<article>
-						<a href="pdf/web/viewer.html?file=Viewport-Aware Deep Reinforcement LearningApproach for 360oVideo Caching.pdf" class="image"><img src="images/pic05.jpg" alt="" /></a>
+						<a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(2)" class="image"><img src="images/pic05.jpg" alt="" /></a>
 						<div class="inner">
-							<a href="pdf/web/viewer.html?file=Viewport-Aware Deep Reinforcement LearningApproach for 360oVideo Caching.pdf"><h4>Edge caching (2) [pdf]</h4></a>
+							<a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(2)"><h4>Edge caching (2) [pdf]</h4></a>
 							<p>In this project, we use machine learning techniques, i.e., Neural Networks, Deep Learning, to deliver VR applications in 5G networks, for a Video on Demand setting.</p>
 						</div>
 					</article>
 					<article>
-						<a href="pdf/web/viewer.html?file=Tile-Based Joint Caching and Delivery of360oVideos in Heterogeneous Networks.pdf" class="image"><img src="images/pic06.jpg" alt="" /></a>
+						<a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(2)" class="image"><img src="images/pic06.jpg" alt="" /></a>
 						<div class="inner">
-							<a href="pdf/web/viewer.html?file=Tile-Based Joint Caching and Delivery of360oVideos in Heterogeneous Networks.pdf"><h4>Edge caching (3) [pdf]</h4></a>
+							<a style="cursor: pointer;" href="javascript:void(0)" onclick="return urlBookmark(2)"><h4>Edge caching (3) [pdf]</h4></a>
 							<p>In this project, we use machine learning, i.e., LSTM networks for time-series forecasting, in order to optimize the delivery of VR applications in 5G networks for live streaming.</p>
 						</div>
 					</article>				
