@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Pantelis Maniotis - Portfolio</title>
+	<link rel = "icon" type = "image/png" href = "Logo.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/mycss.css" />
+
+    <script>
+	function thank_you(){
+		var obj = document.getElementById('main2')
+		var vis = obj.style.display;
+		obj.style.display = vis == "none" ? 'block' : "none"
+
+		var obj = document.getElementById('main')
+		var vis = obj.style.display;
+		obj.style.display = vis == "none" ? 'block' : "none"
+	}
+	function box_visibility(){
+		var obj = document.getElementById('box')
+		var vis = obj.style.visibility;
+		obj.style.visibility = vis == "visible" ? 'hidden' : "visible"
+ 		obj.style.opacity = 1;
+		var obj2 = document.getElementById('box2')
+		var vis2 = obj2.style.visibility;
+		obj2.style.visibility = vis2 == "visible" ? 'hidden' : "visible"
+		obj2.style.opacity = 0.5;
+	}
+	function clear_screen(){
+		var obj = document.getElementById('box')
+		var vis = obj.style.visibility;
+		obj.style.visibility = 'hidden';
+
+		var obj2 = document.getElementById('box2')
+		var vis2 = obj2.style.visibility;
+		obj2.style.visibility = 'hidden';
+	}
+	</script>
+
+</head>
+
+<body style="margin:0px;padding:0px;overflow:hidden">
+<iframe src="http://recmovies-env.eba-edhbyibt.eu-west-2.elasticbeanstalk.com/" style="border: 0; width: 100%; height: 100%; position:absolute"></iframe>
+</body>
+</html>
